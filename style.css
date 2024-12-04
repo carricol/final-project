@@ -51,6 +51,7 @@ header a.symbol {
     div.a {
         font-size: 30px;
     }
+
 }
 
 hr {
@@ -70,28 +71,172 @@ div.a {
     margin: 10px;
 }
 
-.row {
-    display: -webkit-flex;
-    display: flex;
+.about-me {
+    margin-top: 2em;
+    margin-left: 5em;
+    margin-right: 5em;
+    border: 5px solid #36827F;
+    text-align: center;
+    background:#F4F4ED;
+    
 }
 
-.column {
-    flex-grow:1;
-    margin:20px;
-    padding: 10px;
+.about-me h1 {
+    font-size:90px;
+    font-style: italic;
+    color: #36827F;
 }
 
-#about-me {
+h3 { 
+   color: #36827F;
+}
+
+p{
+    margin: 3em;
+    font-weight: bold;
+    color: #162521;
+}
+
+.photo-and-resume{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
-    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left:100px;
+    margin-right: 100px;
 }
 
-@media (max-width: 600px){
-    .row {
-        -webkit-flex-direction: column;
+.p-r {
+    flex-grow: 1;
+    margin: 20px;
+    padding: 10px;
+    background:#36827F;
+
+}
+
+.p-r:nth-of-type(1){
+    flex: 1
+}
+
+.p-r:nth-of-type(2){
+    flex: 1
+}
+
+img{
+    height:auto;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .about-me h1 {
+        font-size: 3rem;
+    }
+
+    .about-me h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-me p {
+        font-size: 0.9rem;
+    }
+
+    .photo-and-resume {
         flex-direction: column;
+        align-items: center;
+    }
+
+    .p-r {
+        max-width: 80%;
+        margin-bottom: 20px;
     }
 }
+
+@media (max-width: 480px) {
+    .about-me h1 {
+        font-size: 1.6rem;
+    }
+
+    .about-me h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-me p {
+        font-size: 0.85rem;
+    }
+
+    .photo-and-resume {
+        gap: 20px;
+    }
+
+    .p-r {
+        max-width: 90%;
+    }
+}
+
+#pic-of-me {
+    width: 100%;
+    height: 100%;
+}
+
+#resume {
+    width: 100%;
+    height: auto;
+}
+
+form {
+    align-items: center;
+    gap: 10px;
+    padding-top: 0%;
+    margin-left: 5em;
+    margin-right: 5em;
+    padding-bottom: 20px;
+}
+
+form h3 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+form h3 {
+    color:#162521;
+    text-size-adjust: 20px;
+}
+
+.input-box {
+    background-color:#36827F;
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #36827F;
+    border-radius: 4px;
+    resize:none;
+    box-sizing: border-box;
+
+}
+
+input {
+    color:#F4F4ED;
+    font-style:italic;
+    font-size: 20px;
+}
+
+button {
+    background-color: #EE964B;
+    border: 1px solid #EE964B;
+    color:#162521;
+    font-weight: bold;
+    font-size: 18px;
+    }
+
+::placeholder {
+    color:#F4F4ED;
+    opacity: 1;
+    font-size: 20px;
+}
+
+
+
