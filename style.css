@@ -238,66 +238,12 @@ button {
     font-size: 20px;
 }
 
-.column {
-    float: left;
-    width: 25%;
-    padding: auto;
-    margin-top: 4em;
-    gap: 10px;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
-  @media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-      display: block;
-      margin-bottom: 20px;
-    }
-  }
 
   .hometext {
     width: 100%;
   }
   
-  .row {
-    width: 100%;
-  }
-  .card {
-    box-shadow: 0 4px 8px 0 #EE964B;
-    padding: 16px;
-    border-color: #EE964B;
-    border-style: solid;
-    border-width: 3px 3px 3px 3px;
-    border-radius: .3rem;
-    text-align: center;
-    background-color: #F4F4ED;
-    margin-bottom: 40px;
-  }
-
-  .card-body {
-    background-color:#36827F;
-    margin-top: 8px;
-  }
-
-  .card-title{
-    color:#F4F4ED;
-    font-weight: bold;
-    font-size: 30px;
-    padding: 3px;
-  }
-
-  .card-text {
-    color:#F4F4ED;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
-    margin: auto;
-  }
 
   .btn {
     margin-top: 10px;
@@ -343,6 +289,68 @@ button {
     padding: 3px;
     color:#36827F;
   }
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.card {
+    width: 325px;
+    background-color:#36827F;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px #EE964B;
+    overflow: hidden;
+    transition: transform 0.6s ease;
+}
+
+.card:hover {
+    transform: translateY(-20px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: justify;
+}
+
+.card-content h2 {
+    text-align: center;
+    font-size: 30px;
+    color:#F4F4ED;
+    background-color:#EE964B;
+}
+
+.card-content p {
+    margin-top: 10px;
+    font-size: 17px;
+    font-style: italic;
+    font-weight: normal;
+    text-align: center;
+    color:#F4F4ED;
+    margin-bottom: 20px;
+}
+
+.card-button {
+    display: inline-block;
+    background-color: #F4F4ED;
+    color:#162521;
+    margin: 2px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+
+}
   
   
   
