@@ -276,7 +276,7 @@ button {
     border-radius: .3rem;
     text-align: center;
     background-color: #F4F4ED;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   .card-body {
@@ -306,3 +306,43 @@ button {
     font-weight:bolder;
     font-size: 15px;
   }
+
+  .footer {
+    padding:10px 0;
+    background-color:#F4F4ED;
+    color:#162521;
+  }
+  
+  .footer ul {
+    padding:0;
+    list-style:none;
+    text-align:center;
+    font-size:18px;
+    line-height:1.6;
+    margin-bottom:0;
+  }
+  
+  .footer li {
+    padding:0 10px;
+  }
+  
+  .footer ul a {
+    text-decoration: none;
+    color:inherit;
+    opacity:0.8;
+  }
+  
+  .footer ul a:hover {
+    opacity: 0.5;
+    color:#36827F;
+    text-decoration: underline;
+  }
+
+  .footer h2 {
+    text-align: center;
+    padding: 3px;
+    color:#36827F;
+  }
+  
+  
+  
