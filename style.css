@@ -276,6 +276,7 @@ button {
     border-radius: .3rem;
     text-align: center;
     background-color: #F4F4ED;
+    margin-bottom: 20px;
   }
 
   .card-body {
